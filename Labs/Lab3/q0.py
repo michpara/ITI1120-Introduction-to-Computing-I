@@ -1,8 +1,7 @@
 
 #Part 1
-
 def info_day(today, weather, temperature):
-    '''(string, string, number) -> string
+    '''(string, string, number) -> (string)
     prints the weather'''
     print(today, "is a", weather, "day. The temperature is", temperature, "degrees Celsius.")
     s = today + " is a " + weather + " day. The temperature is " + str(temperature) + " degrees Celsius."
@@ -12,18 +11,16 @@ info_day("Saturday", "nice", 29)
 info_day("Monday", "so so", 15)
 
 #Part 2
-
 def letter_grade(grade):
-    '''(string)-> string
+    '''(string)-> (string)
     prints the letter grade'''
     print("Your grade is", grade)
 
 letter_grade("B")
 
 #Part 3
-
 def average_of_two(num1, num2):
-    '''(number, number) -> float
+    '''(number, number) -> (float)
     returns the average of two numbers'''
     return (num1 + num2)/2
 
@@ -33,9 +30,9 @@ print(average_of_two(x, y))
 
 #Exercise 1
 def pay(hourly, hours):
-     '''(int,int) -> number
-     Preconditons: hourly & hours > 0
-     Return wage for employee given hourly rate and hours worked.
+     '''(int,int) -> (number)
+     preconditons: hourly & hours > 0
+     return wage for employee given hourly rate and hours worked.
      '''
      if hours <= 40:
           wage = hours * hourly
@@ -46,8 +43,9 @@ def pay(hourly, hours):
      return wage
 
 #Exercise 2:
-
 def rps(p1,p2):
+    '''(string, string) -> (integer)
+    returns 1 if p2 wins, -1 if p1 wins and 0 if it's a tie'''
     if(p1 == 'R'):
         if(p2 == 'P'):
             return 1
@@ -71,6 +69,3 @@ def rps(p1,p2):
             return -1
         else:
             return 0
-            
-
-          
