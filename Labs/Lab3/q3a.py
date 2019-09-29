@@ -1,4 +1,6 @@
 def is_divisible(n, m):
+    '''(integer, integer) -> (boolean)
+    returns if n is divisible by m'''
     return n%m == 0
 
 x = int(input("Enter 1st integer: "))
