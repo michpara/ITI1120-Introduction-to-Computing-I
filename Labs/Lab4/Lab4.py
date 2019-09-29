@@ -1,4 +1,7 @@
+#Exercise 1
 def is_eligible(age, citizenship, prison):
+     '''(integer, string, string) -> (boolean)
+     returns True if someone is 18 or over, a canadian citizen and has never been to prison'''
      if age >=18 and citizenship.lower().strip() in ['canadian', 'canada'] and prison.lower().strip() == 'no':
           return True
      else:
@@ -14,7 +17,10 @@ if is_eligible(age, citizenship, prison):
 else:
      print(name, ", you are ineligible to vote")
 
+#Exercise 2
 def mess(phrase):
+     '''(string) -> (string)
+     capitalizes anything in (r, s, t, v, w, x, y, z) and add a '-' when there is a whitespace'''
     acc = ''
     for i in phrase:
         if i in ('r', 's', 't', 'v', 'w', 'x', 'y', 'z'):
