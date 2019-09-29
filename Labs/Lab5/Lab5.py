@@ -47,7 +47,8 @@ def arithmetic(nums):
         if(nums[i+1] - nums[i] != diff):
             return False
     return True
-        
+
+#Exercise 3b
 def is_sorted(nums):
     '''(list) -> (boolean)
     returns true if nums is ordered from smallest to largest'''
