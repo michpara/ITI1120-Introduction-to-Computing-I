@@ -32,13 +32,3 @@ def search_by_year(books, year1, year2):
             if books[i][0][-4:] >= year1 and books[i][0][-4:]<= year2:
                 book_list.append(books[i])
     return book_list
-            
-            
-
-#main
-file_name = input("Enter the name of the file: ")
-file_name = file_name.strip()
-ny_table = create_books_2Dlist(file_name)
-print(ny_table)
-print("-----")
-print(search_by_year(ny_table, "1980", "2005"))
