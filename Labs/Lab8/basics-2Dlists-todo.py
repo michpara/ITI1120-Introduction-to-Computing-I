@@ -89,7 +89,6 @@ def make_matrix_random(a,b, x, y):
      filled with random integers >=x and <=y
      Precondition: a,b positive and x <=y
      '''
-     # your code goes here
      matrix = []
      for i in range(a):
           row =[]
@@ -108,8 +107,6 @@ def sum_above_diagonal(m):
      >>> sum_above_diagonal([[1,2],[10,20]] )
      23
      '''
-     
-     # your code goes here
      sum = 0
      for i in range(len(m)):
           for j in range(len(m[0])):
@@ -127,7 +124,6 @@ def max_over_all_even_cols(m):
      >>> max_over_all_even_cols([1,1,1,1,1,1,1],[1,10,3,20,12,6,0] )
      12
      '''
-     # your code goes here
      max_num = 0
      for i in range(len(m)):
           for j in range(0,len(m[0]), 2):
@@ -146,7 +142,6 @@ def max_each_row(m):
      >>> max_each_row([[1,2],[200,0],[3,3],[-10,-20]])
      [2, 200, 3, -10]
      '''
-     # your code goes here
      max_list = []
      for i in range(len(m)):
           max_num = 0
@@ -167,7 +162,6 @@ def index_of_max_sum_row(m):
      >>> index_of_max_sum_row([[100,100], [-100,0], [200,30], [10000,2]])
      3
      '''
-     # your code goes here
      max_list = []
      for i in range(len(m)):
           sum = 0
