@@ -7,26 +7,17 @@ def info_day(today, weather, temperature):
     s = today + " is a " + weather + " day. The temperature is " + str(temperature) + " degrees Celsius."
     print(s)
 
-info_day("Saturday", "nice", 29)
-info_day("Monday", "so so", 15)
-
 #Part 2
 def letter_grade(grade):
     '''(string)-> (string)
     prints the letter grade'''
     print("Your grade is", grade)
 
-letter_grade("B")
-
 #Part 3
 def average_of_two(num1, num2):
     '''(number, number) -> (float)
     returns the average of two numbers'''
     return (num1 + num2)/2
-
-x = int(input("What is your first number?: "))
-y = int(input("What is your second number?: "))
-print(average_of_two(x, y))
 
 #Exercise 1
 def pay(hourly, hours):
