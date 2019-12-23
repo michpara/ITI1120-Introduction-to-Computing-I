@@ -14,4 +14,4 @@ x = int(input("Enter an integer: "))
 if(is_divisible23n8(x) == 'yes'):
 	print(f'{x} is divisible by 2 or 3 but not 8')
 else:
-	print(f'It is not trut that {x} is divisible by 2 or 3 but not 8')
+	print(f'It is not true that {x} is divisible by 2 or 3 but not 8')
