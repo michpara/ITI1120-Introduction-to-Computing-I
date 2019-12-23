@@ -19,7 +19,7 @@ has the following solutions (i.e. roots):
 
 #Exercise 3
 def real_roots(a, b, c):
-    '''(number, number, number) -> (float)
+    '''(number, number, number) -> (bool)
     returns true if b**2-(4*a*c) is positive and false otherwise'''
     return (b**2-(4*a*c)) == abs(b**2-(4*a*c))
 
