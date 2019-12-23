@@ -1,4 +1,6 @@
 def min_or_max_index(lst, flag):
+    '''(list, boolean)-> (tuple)
+    returns a tuple with the min value and index of lst if flag is true, and max value and index of lst if flag is false'''
     max_val = lst[0]
     min_val = lst[0]
     if flag:
