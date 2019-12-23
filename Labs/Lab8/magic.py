@@ -18,8 +18,6 @@ def magic(m):
      if(not(is_square(m))): # if matrix is not square
           return False      # return False
 
-     # YOUR CODE GOES HERE
-
      #CASE 1
      for i in m:
           for j in i:
@@ -35,11 +33,13 @@ def magic(m):
           for j in range(len(m[0])):
                sum_row += m[i][j]
           list_row.append(sum_row)
+     
      for i in range(len(m[0])):
           sum_col = 0
           for j in range(len(m)):
                sum_col+= m[i][j]
           list_col.append(sum_col)
+     
      sum_left =0
      for i in range(len(m)):
           for j in range(len(m[0])):
@@ -48,40 +48,9 @@ def magic(m):
      sum_right =0
      for i in range(len(m)):
           sum_right+= m[i][len(m)-i-1]
-     print(list_row)
-     print(list_col)
-     print(sum_left)
-     print(sum_right)
+
      for i in list_row:
           for j in list_col:
                if i != j or i != sum_left or i!= sum_right:
                     return False
      return True
-   
-               
-
-# main
-# TESTING OF magic functions
-276
-951
-483
-# this should print True
-
-m0=[[2,7, 6],[9,5,1],[4,3,8]]
-print(magic(m0))
-    
-# this should print True
-m1 = [[16,3,2,13], [5,10,11,8],[9,6,7,12], [4,15,14,1]]
-print(magic(m1))
-    
-# this should print False. Why? Which condition imposed on magic squares is not true for m3
-m2 = [[1,2,3,4], [5,6,7,8],[9,10,11,12], [13,14,15,16]]
-print(magic(m2))
-    
-#this should print False. Why? Which condition imposed on magic squares is not true for m3
-m3 =  [[1,1],[1,1]]
-print(magic(m3))
-
-# #this should print False. Why? Which condition imposed on magic squares is not 
-m3 =  [[1,1],[1,1],[1,2]]
-print(magic(m3))
