@@ -1,4 +1,6 @@
 def sum_5_consecutive_f(nums):
+    '''(list)->(boolean)
+    returns true if there are 5 consecutive numbers in nums that sum to zero'''
     for i in range(0, len(nums)-4):
         if((nums[i] + nums[i+1] + nums[i+2] + nums[i+3] + nums[i+4]) == 0):
             return True
