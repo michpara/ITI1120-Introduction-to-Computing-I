@@ -1,4 +1,6 @@
 def get_year():
+    '''()->(integer)
+    returns the year as an integer'''
     flag = True
     answer = 0
     while(flag):
