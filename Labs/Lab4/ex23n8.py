@@ -7,9 +7,6 @@ def print_all_23n8(num):
         if((i%2==0 or i%3 ==0) and i%8 != 0):
             print(i)
 
-num = int(input("Enter a non-negative integer: "))
-print_all_23n8(num)
-
 #Exercise 4
 def pyramid(num, char):
     '''(integer, string) -> (string)
