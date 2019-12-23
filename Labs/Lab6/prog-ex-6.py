@@ -1,4 +1,7 @@
 def fib(n):
+    '''(integer)->()
+    preconditions: n > 1
+    creates a fibonnaci list'''
     a = [0]*n
     a[0] = 1
     a[1] = 1
