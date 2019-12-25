@@ -148,6 +148,7 @@ class Card:
             Otherwise False
         """
         return int(self.rank) < int(other.rank)
+
     def __le__(self, other):
         """(Card, Card) -> bool
             Return True if the rank of the card on the left,self
@@ -155,7 +156,7 @@ class Card:
             Otherwise False
         """
         return int(self.rank) <= int(other.rank)
-    
+        
     def __gt__(self, other):
         """(Card, Card) -> bool
             Return True if the rank of the card on the left,self
@@ -163,7 +164,7 @@ class Card:
             Otherwise False
         """
         return int(self.rank) > int(other.rank)
-    
+
     def __ge__(self, other):
         """(Card, Card) -> bool
             Return True if the rank of the card on the left,self
@@ -210,3 +211,19 @@ class Deck:
         '''returns True if decks have the same cards
            in the same order'''
         return self.deck == other.deck
+
+class Vector(Point):
+
+    def __init__(self, xcoord=0, ycoord=0):
+        '''initializes vector'''
+        self.x = xcoord
+        self.y = ycoord
+
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y)
+
+    def __mul__(self, other):
+        return self.x*other.x + self.y*other.y
+
+    def __repr__(self):
+        return 'Vector(' + str(self.x) + ',' + str(self.y) + ')'
