@@ -213,17 +213,58 @@ class Deck:
         return self.deck == other.deck
 
 class Vector(Point):
-
+    '''class that represents a Vector'''
+    
     def __init__(self, xcoord=0, ycoord=0):
-        '''initializes vector'''
+        '''(Vector, Number, Number)->None'''
         self.x = xcoord
         self.y = ycoord
 
     def __add__(self, other):
+        '''(Vector, Vector)->Vector
+        adds to vectors together''' 
         return Vector(self.x + other.x, self.y + other.y)
 
     def __mul__(self, other):
+        '''(Vector, Vector)->Integer
+        returns the cross value of two vectors'''
         return self.x*other.x + self.y*other.y
 
     def __repr__(self):
+        '''(Vector)->String
+        formal representation of Vector'''
         return 'Vector(' + str(self.x) + ',' + str(self.y) + ')'
+
+class Points(Point):
+    '''class representing points'''
+    
+    def __init__(self, points = []):
+        '''(Points, List)->None'''
+        self.points = points
+
+    def add(self, x, y):
+        '''(Points, Number, Number)->()
+        adds a point with coordinates x and y to points'''
+        self.points.append(Point(x, y))
+
+    def left_most_point(self):
+        '''(Points)->Point
+        returns the point with the left most value and the lowest value'''
+        left_most = self.points[0]
+        for i in self.points:
+            if left_most.x > i.x:   
+                left_most = i
+            elif left_most.x == i.x and left_most.y > i.y:
+                left_most = i
+        return left_most
+            
+
+    def __len__(self):
+        '''(Points)->Integer
+        returns the length of points'''
+        return len(self.points)
+
+    def __repr__(self):
+        '''(Points)->String
+        formal representation of points'''
+        return 'Points(' + str(self.points) + ')'

@@ -1,12 +1,13 @@
 class PingPong:
-
+    '''class that represents ping pong'''
 
     def __init__(self, sound = 'PONG'):
-        '''(Point)-> None'''
+        '''(PingPong)-> None'''
         self.sound = sound
 
     def next(self):
-        '''switches between PING and PONG'''
+        '''(PingPong)->Strng
+        switches between PING and PONG'''
         if self.sound == 'PING':
             self.sound = 'PONG'
         else:
