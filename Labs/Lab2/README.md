@@ -1,3 +1,3 @@
 # Lab 2
 
-Open Lab02.pdf for explanation of Lab 2. 
+Instructions for Lab 2 in Lab02.pdf
