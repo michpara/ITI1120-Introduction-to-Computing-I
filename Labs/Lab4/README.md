@@ -1,3 +1,3 @@
 # Lab 4
 
-Open Lab4.pdf for explanation of Lab 4.
+Instructions for Lab 4 in Lab4.pdf
