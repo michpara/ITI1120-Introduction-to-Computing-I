@@ -1,3 +1,3 @@
 # Lab 9
 
-To view instructions for lab 9, open lab9.pdf
+Instructions for Lab 9 in lab9.pdf
