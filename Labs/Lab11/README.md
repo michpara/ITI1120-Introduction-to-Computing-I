@@ -1,3 +1,3 @@
 # Lab 11
 
-To view instructions on lab 11, please open lab11.pdf
+Instructions for Lab 11 in lab11.pdf
