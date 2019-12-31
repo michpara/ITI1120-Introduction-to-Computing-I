@@ -1,3 +1,3 @@
 # Lab 7
 
-Open Lab7.pdf for an explanation on Lab 7.
+Instructions for Lab 7 in Lab7.pdf
