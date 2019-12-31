@@ -1,2 +1,3 @@
-# ITI1120
-Labs for ITI1120.
+# Introduction to Computing I
+
+Labs for Introduction to Computing I
