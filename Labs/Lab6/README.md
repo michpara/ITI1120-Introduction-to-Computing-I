@@ -1,3 +1,3 @@
 # Lab 6
 
-Open Lab6.pdf for an explanation on Lab 6.
+Instructions for Lab 6 in Lab6.pdf
